@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NutriTrack.Views.LoginPage"
+             Shell.FlyoutBehavior="Disabled"
+             Title="LoginPage">
+    <VerticalStackLayout Margin="20" Spacing="10" >
+
+        <Image Source="logo.png" HeightRequest="200" WidthRequest="750" HorizontalOptions="Center" Margin="50,0,0,0" VerticalOptions="Center"  />
+
+        <Label Text="NutriTrack" HorizontalOptions="Center" FontSize="Medium" FontAttributes="Bold" Margin="0,0,0,20"/>
+
+        <Entry x:Name="userName" Placeholder="Username" FontSize="Subtitle" />
+        <Entry x:Name="password" Placeholder="Password" IsPassword="True" FontSize="Subtitle" />
+
+        <Button Text="Login" FontSize="Medium"  Clicked="Button_Clicked" CornerRadius="15" BackgroundColor="DarkGreen"/>
+        
+
+        <Label Text="Don't have an account?" FontSize="Medium" HorizontalOptions="Center"/>
+
+        <Button Text="Sign Up" FontSize="Medium" Clicked="Button_Clicked_1" VerticalOptions="End" CornerRadius="15" BackgroundColor="DarkGreen"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>
