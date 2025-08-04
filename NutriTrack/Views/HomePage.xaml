@@ -23,10 +23,10 @@
             <Button Text="Search Food"
                     FontSize="18"
                     Clicked="OnSearchClicked"/>
-            
+
             <Button Text="Food Info"
                     FontSize="18"
-                    Clicked="OnFoodInfoClicked"
+                    Clicked="OnFoodInfoClicked" />
 
         </VerticalStackLayout>
     </ScrollView>
