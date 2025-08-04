@@ -7,13 +7,18 @@ public partial class HomePage : ContentPage
 		InitializeComponent();
 	}
 
-	private async void OnTrackMealClicked(object sender, EventArgs e)
+	private async void OnJourneyClicked(object sender, EventArgs e)
 	{
-		await DisplayAlert("Track Meal", "Navigate to meal tracking page.", "OK");
+		await Navigation.PushAsync(new JourneyPage());
 	}
 
-	private async void OnViewStatsClicked(object sender, EventArgs e)
-	{
-		await DisplayAlert("View Stats", "Navigate to nutrition stats page", "OK");
-	}
+    private async void OnSearchClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new SearchPage());
+    }
+
+    private async void OnFoodInfoClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new FoodInfoPage());
+    }
 }
