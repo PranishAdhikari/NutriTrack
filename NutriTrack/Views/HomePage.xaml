@@ -9,14 +9,21 @@
             <Label Text="NutriTrack"
                    FontSize="32" 
                    FontAttributes="Bold"
-                   HorizontalOptions="Center"/>
+                   HorizontalOptions="Center" />
 
             <Label Text="Welcome! Stay on top of your nutrition goals."
                    FontSize="18"
                    HorizontalOptions="Center"
                    HorizontalTextAlignment="Center" />
-            
-            
+
+            <Button Text="Track a Meal"
+                    FontSize="18"
+                    Clicked="OnTrackMealClicked" />
+
+            <Button Text="View Nutrition Stats"
+                    FontSize="18"
+                    Clicked="OnViewStatsClicked"/>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
