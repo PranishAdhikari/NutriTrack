@@ -16,13 +16,17 @@
                    HorizontalOptions="Center"
                    HorizontalTextAlignment="Center" />
 
-            <Button Text="Track a Meal"
+            <Button Text="View Journey"
                     FontSize="18"
-                    Clicked="OnTrackMealClicked" />
+                    Clicked="OnJourneyClicked" />
 
-            <Button Text="View Nutrition Stats"
+            <Button Text="Search Food"
                     FontSize="18"
-                    Clicked="OnViewStatsClicked"/>
+                    Clicked="OnSearchClicked"/>
+            
+            <Button Text="Food Info"
+                    FontSize="18"
+                    Clicked="OnFoodInfoClicked"
 
         </VerticalStackLayout>
     </ScrollView>
