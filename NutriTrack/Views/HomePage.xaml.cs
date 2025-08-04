@@ -1,4 +1,5 @@
 using Microsoft.Maui.Controls;
+
 namespace NutriTrack.Views
 {
 
