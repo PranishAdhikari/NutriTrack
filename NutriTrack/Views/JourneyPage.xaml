@@ -22,7 +22,8 @@
 
             <Button Text="Update Weight"
                     Clicked="OnUpdateWeightClicked"
-                    HorizontalOptions="Center" />
+                    HorizontalOptions="Center"
+                    BackgroundColor="DarkGreen"/>
             
         </VerticalStackLayout>
         
