@@ -1,9 +1,28 @@
-namespace NutriTrack.Views;
+using Microsoft.Maui.Controls;
 
-public partial class HomePage : ContentPage
+namespace NutriTrack.Views
 {
-	public HomePage()
-	{
-		InitializeComponent();
-	}
+
+    public partial class HomePage : ContentPage
+    {
+        public HomePage()
+        {
+            InitializeComponent();
+        }
+
+        private async void OnJourneyClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new JourneyPage());
+        }
+
+        private async void OnSearchClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SearchPage());
+        }
+
+        private async void OnFoodInfoClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FoodInfoPage());
+        }
+    }
 }
