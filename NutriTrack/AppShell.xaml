@@ -7,8 +7,11 @@
     Shell.FlyoutBehavior="Disabled">
 
     <TabBar>
+        <ShellContent ContentTemplate="{DataTemplate views:LoginPage}"
+                      Route="LoginPage"
+                      FlyoutItemIsVisible="False"/>
         <ShellContent
-            Title="Home"
+        Title="Home"
             Icon="home.png"
             ContentTemplate="{DataTemplate views:HomePage}"
             Route="HomePage" />
